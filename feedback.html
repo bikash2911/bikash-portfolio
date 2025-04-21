@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- feedback section  -->
+
+    <div class="feedback-section">
+      <div class="box">
+        <h2>Leave Your Feedback</h2>
+        <p>We'd love to hear your thoughts!</p>
+        <hr class="feedback-hr" />
+        <form
+          action="https://formspree.io/f/xanwkakp"
+          method="POST"
+          id="form"
+          class="feedback-form"
+        >
+          <div class="input-t-e">
+            <div class="mb-3">
+              <label for="username">Full Name :</label>
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                required
+                autocomplete="off"
+                placeholder="Enter Your Name"
+                oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email">Email Address :</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                autocomplete="off"
+                placeholder="example@gmail.com"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="position">Position / Company:</label>
+            <input
+              type="text"
+              id="position"
+              name="position"
+              placeholder="e.g. CEO at Google"
+              required
+            />
+          </div>
+          <div class="mb-3 feedback-text">
+            <label for="message">Yor Feedback :</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              required
+              placeholder="Write your feedback..."
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="contact-btn">Submit Feedback</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

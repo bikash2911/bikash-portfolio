@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikash - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="index.html">home</a></li>
+          <li><a class="navbar-link" href="project.html">projects</a></li>
+          <li><a class="navbar-link" href="contact.html">contact</a></li>
+          <div class="mobile-nav-button-icon">
+            <a href="/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="/"><i class="fa-brands fa-youtube"></i></a>
+            <a href="/"><i class="fa-brands fa-github"></i></a>
+            <a href="/"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </ul>
+        <!-- for mobile nav icon  -->
+        <div class="mobile-navbar-btn">
+          <i name="menu-outline" class="fa-solid fa-bars"></i>
+          <i name="close-outline" class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- contact form section  -->
+
+    <div class="section-contact--form">
+      <div class="heading-container">
+        <h3 class="contact-subheading">Let’s work Together</h3>
+        <p class="contact-desc">
+          Have a project in mind or looking to collaborate? I'm always open to
+          discussing web development opportunities, freelance work, or creative
+          ideas.
+        </p>
+      </div>
+      <div class="container-form">
+        <div class="contact-content">
+          <!-- action with formspree.com for submit data in email -->
+          <form
+            action="https://formspree.io/f/xanwkakp"
+            method="POST"
+            id="form"
+          >
+            <div class="mb-3">
+              <label for="username">Your Name :</label>
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                required
+                autocomplete="off"
+                placeholder="Enter Your Name"
+                oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email">Email :</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                autocomplete="off"
+                placeholder="example@gmail.com"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="subject">Phone No. :</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                required
+                placeholder="Phone Number"
+                maxlength="15"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="subject">subject :</label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Optional.."
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="service">Choose a service :</label>
+              <select
+                id="service"
+                name="service"
+                class="custom-select"
+                required
+              >
+                <option value="">-- Select Service --</option>
+                <option value="responsiveDesignFigma">
+                  Responsive Web Design (Figma)
+                </option>
+                <option value="staticWebsite">
+                  Website Development (Static)
+                </option>
+                <option value="landingPageDesign">
+                  Landing Page Design & Development
+                </option>
+                <option value="performanceOptimization">
+                  Performance Optimization
+                </option>
+                <option value="webRedesign">Website Redesign</option>
+                <option value="webManintenance">Website Maintenance</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="message">message :</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="your messages (Optional)"
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" class="contact-btn">send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      const links = document.querySelectorAll(".navbar-link");
+      const currentPage = location.pathname.split("/").pop();
+
+      links.forEach((link) => {
+        const linkPage = link.getAttribute("href");
+
+        // Check if the link matches the current page
+        if (
+          linkPage === currentPage ||
+          (linkPage === "index.html" && currentPage === "")
+        ) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
