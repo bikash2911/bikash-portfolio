@@ -44,17 +44,41 @@
                 placeholder="example@gmail.com"
               />
             </div>
+            <div class="mb-3">
+              <label for="position"
+                >Company / Organization Name (optional) :</label
+              >
+              <input
+                type="text"
+                id="position"
+                name="position"
+                placeholder="Enter your company / Organization name"
+              />
+            </div>
           </div>
           <div class="mb-3">
-            <label for="position">Position / Company:</label>
-            <input
-              type="text"
+            <label for="position">Your Position / Role :</label>
+            <select
               id="position"
               name="position"
-              placeholder="e.g. CEO at Google"
+              class="custom-select"
               required
-            />
+            >
+              <option value="">-- Select Position --</option>
+
+              <option value="CEO">CEO / Founder</option>
+              <option value="startup founder">Startup Founder</option>
+              <option value="hr">HR / Talent Acquisition</option>
+              <option value="Manager">Manager</option>
+              <option value="freelancer">Freelancer</option>
+              <option value="individual">Individual</option>
+              <option value="Developer">Developer</option>
+              <option value="Designer">Designer</option>
+              <option value="student">Student</option>
+              <option value="Other">Other</option>
+            </select>
           </div>
+
           <div class="mb-3 feedback-text">
             <label for="message">Yor Feedback :</label>
             <textarea
@@ -73,5 +97,6 @@
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
