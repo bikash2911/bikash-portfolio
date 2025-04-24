@@ -877,6 +877,9 @@ footer .footer-flex-container .footer-container {
 
   /* About Section */
 
+  .aboutSection {
+    margin-top: 5rem;
+  }
   .aboutSection .container .content {
     width: 100%;
     padding: 1rem;
@@ -908,5 +911,32 @@ footer .footer-flex-container .footer-container {
   /* Footer */
   footer .footer-container .footer-flex-container .footer-container .follow-on {
     margin: 1.5rem;
+  }
+}
+
+/* landscape ko lagi responsive  */
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .firstSection {
+    margin-top: 15rem;
+  }
+  .aboutSection {
+    margin-top: 20rem;
+  }
+  hr {
+    display: none;
+  }
+
+  .follow-on {
+    display: none;
+  }
+  .navbar-list {
+    margin-top: 10rem;
+    padding-top: 1rem;
+  }
+
+  .mobile-nav-button-icon {
+    bottom: 10rem;
+    left: 2rem;
   }
 }
