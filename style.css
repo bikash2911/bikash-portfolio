@@ -842,6 +842,10 @@ footer .footer-flex-container .footer-container {
     width: 70%;
   }
 
+  .input-t-e{
+    flex-direction: column;
+  }
+
   /* Footer */
   footer .footer-flex-container {
     flex-direction: column;
@@ -907,6 +911,7 @@ footer .footer-flex-container .footer-container {
   .testimonial-section {
     margin-bottom: 5rem;
   }
+  
 
   /* Footer */
   footer .footer-container .footer-flex-container .footer-container .follow-on {
