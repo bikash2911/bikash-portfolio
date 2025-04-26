@@ -388,8 +388,8 @@ main hr {
 
 label {
   display: block;
-  text-transform: capitalize;
   font-size: 2rem;
+  text-transform: none;
 }
 
 input,
@@ -842,7 +842,7 @@ footer .footer-flex-container .footer-container {
     width: 70%;
   }
 
-  .input-t-e{
+  .input-t-e {
     flex-direction: column;
   }
 
@@ -911,7 +911,6 @@ footer .footer-flex-container .footer-container {
   .testimonial-section {
     margin-bottom: 5rem;
   }
-  
 
   /* Footer */
   footer .footer-container .footer-flex-container .footer-container .follow-on {
