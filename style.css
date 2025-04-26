@@ -468,10 +468,25 @@ textarea:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  & h1 {
+  flex-direction: column;
+  gap: 3rem;
+  & h1{
     text-transform: capitalize;
   }
+  
+  
 }
+
+a:link,
+a:visited {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  
+}
+
 
 /* feedback  */
 
