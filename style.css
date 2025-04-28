@@ -258,9 +258,7 @@ main hr {
           transform: scale(1.05);
         }
       }
-      
     }
-    
   }
 }
 
@@ -446,17 +444,50 @@ textarea:focus-visible {
 
 /* project  */
 
+#projects {
+  padding: 1rem 2rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.project-card p {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+.project-card .btn {
+  display: inline-block;
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  background-color: #ffcc00;
+  color: #000;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.project-card .btn:hover {
+  background-color: #ffaa00;
+}
+
 .project {
-  height: 50vh;
+  height: 70vh;
   margin-top: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 3rem;
-  & h1 {
-    text-transform: capitalize;
-  }
 }
 
 a:link,
@@ -465,7 +496,6 @@ a:visited {
   text-transform: capitalize;
   font-size: 2rem;
   font-weight: 500;
-  color: white;
 }
 
 /* feedback  */
