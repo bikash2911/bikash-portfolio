@@ -18,7 +18,12 @@ body {
 .section {
   background: rgba(0, 0, 0, 0.3);
 }
-
+.common-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .boxShadow {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
@@ -136,18 +141,13 @@ main {
 }
 
 .firstSection {
-  width: 100%;
   height: 61vh;
   margin-top: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   & .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 17rem;
   }
 }
 
@@ -204,25 +204,13 @@ main hr {
 }
 
 /* about section */
-.aboutSection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-heding2 {
-  margin-top: 7rem;
-}
-.about-buttom-margin {
-  margin-bottom: 10rem;
-}
 
 .aboutSection .about-heading {
   margin-bottom: 5rem;
 }
 
 .aboutSection .container {
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 }
 
 .aboutSection .container .content {
@@ -238,7 +226,7 @@ main hr {
     display: flex;
     align-items: center;
     justify-content: end;
-    margin: 10rem 11rem 3rem 0;
+    padding: 8rem 11rem 3rem 0;
     gap: 2rem;
     & a {
       text-decoration: none;
@@ -263,13 +251,9 @@ main hr {
 }
 
 /* work experence section */
-.workSection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  & .container .text-gray {
-    color: #b0bec5;
-  }
+
+.container .text-gray {
+  color: #b0bec5;
 }
 
 .workSection h2 {
@@ -277,10 +261,9 @@ main hr {
 }
 
 .workSection .work-container {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 6rem;
+
   & .course-div {
     flex-basis: 33%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
@@ -323,17 +306,17 @@ main hr {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 8rem 5rem 0.1rem 5rem;
+  padding-top: 1rem;
+  margin-top: 3rem;
 }
 
 .heading-container {
-  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 1rem;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 
   & .contact-subheading {
     font-size: 3.2rem;
@@ -443,22 +426,22 @@ textarea:focus-visible {
 }
 
 /* project  */
-
-#projects {
-  padding: 1rem 2rem;
+.project-section {
+  flex-direction: column;
+}
+.project-container {
+  padding-top: 5rem;
 }
 
 .project-card {
   background: #fff;
   padding: 2rem;
-  margin-bottom: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
   font-size: 2.4rem;
-  margin-bottom: 1rem;
   color: black;
 }
 
@@ -485,9 +468,6 @@ textarea:focus-visible {
 .project {
   height: 70vh;
   margin-top: 8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 a:link,
@@ -500,44 +480,23 @@ a:visited {
 
 /* feedback  */
 
-.feedback-heading i {
-  color: yellow;
-  font-size: 2.4rem;
-}
-
-.feedback {
-  margin: 0 0 1rem 5%;
-
-  & .feedback-link {
-    text-underline-offset: 0.4rem;
-    text-decoration-thickness: -0.3rem;
-    font-size: 2.7rem;
-    color: white;
-    &:hover {
-      color: rgba(255, 255, 255, 0.601);
-    }
+.f-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & p {
+    text-align: center;
+    padding: 0 1rem;
   }
 }
 
-.testimonial-section {
-  padding: 4rem 1rem;
-  margin-left: 8%;
-  margin-bottom: 8rem;
-  text-align: center;
-}
-
-.section-title {
-  margin-bottom: 0.5rem;
-}
-
-.section-description {
-  margin-bottom: 2rem;
-}
-
 .testimonial-grid {
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
+  padding-top: 5rem;
 }
 
 .testimonial-card {
@@ -557,6 +516,10 @@ a:visited {
   color: #444;
   margin-bottom: 1rem;
 }
+.client-info {
+  padding-top: 1rem;
+  text-align: center;
+}
 
 .client-info h4 {
   margin: 0;
@@ -568,22 +531,38 @@ a:visited {
   font-size: 1rem;
   color: #686161;
 }
+.feedback {
+  padding-top: 5rem;
+}
+.feedback-heading i {
+  color: yellow;
+  font-size: 2.4rem;
+}
+
+.feedback-link {
+  text-underline-offset: 0.4rem;
+  text-decoration-thickness: -0.3rem;
+  font-size: 2.7rem;
+  color: white;
+  &:hover {
+    color: yellow;
+  }
+}
 
 /* feedback input  */
+
 .feedback-section {
-  width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
 }
 
 .box {
+  width: 50%;
+  height: auto;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  padding: 2rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
   & h2,
   p {
     text-align: center;
@@ -597,14 +576,15 @@ a:visited {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin-top: 1rem;
   }
 }
 .input-t-e {
   display: flex;
   gap: 2rem;
   margin-top: 7rem;
-  /* flex-direction: column; */
+}
+.company-input {
+  width: 60%;
 }
 
 .feedback-text {
@@ -709,9 +689,23 @@ footer .footer-flex-container .footer-container {
 
 /* responsive ko lagi  */
 
+@media (min-width: 1367px) {
+  html {
+    font-size: 65%; /* 1rem = 10.4px */
+  }
+  .common-section {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1057px) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
   /* Hero Section */
   .firstSection {
@@ -770,7 +764,7 @@ footer .footer-flex-container .footer-container {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 56.25%;
     overflow-x: hidden;
   }
   body {
@@ -834,10 +828,6 @@ footer .footer-flex-container .footer-container {
 
   /* Hero Section */
 
-  .hide-mobile-h {
-    display: none;
-  }
-
   main hr {
     margin: 0 5% 3rem 5%;
   }
@@ -861,6 +851,12 @@ footer .footer-flex-container .footer-container {
   }
 
   /* contact section  */
+  .form-blank {
+    margin-top: 8rem;
+  }
+  .section-contact--form {
+    margin: 0;
+  }
   .heading-container {
     width: 90%;
     & .contact-desc {
@@ -873,6 +869,13 @@ footer .footer-flex-container .footer-container {
 
   .input-t-e {
     flex-direction: column;
+  }
+  .box {
+    width: 50%;
+    padding: 0 1rem;
+  }
+  .company-input {
+    width: 100%;
   }
 
   /* Footer */
@@ -935,6 +938,10 @@ footer .footer-flex-container .footer-container {
 
   .contact-content {
     width: 90%;
+  }
+
+  .box {
+    width: 100%;
   }
 
   .testimonial-section {

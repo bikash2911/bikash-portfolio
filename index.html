@@ -8,7 +8,7 @@
       name="description"
       content="Bikash Rai - A passionate Frontend Developer specializing in HTML, CSS, and responsive web design. Explore my projects, skills, and services. Let's build something amazing together!"
     />
-    `
+    
     <meta
       name="keywords"
       content="Frontend Developer, Web Developer, HTML Developer, CSS Developer, Responsive Web Design, Personal Portfolio, Bikash Rai, Web Design, Frontend Projects, Website Development, Web Development Portfolio"
@@ -16,7 +16,6 @@
     <meta name="author" content="Bikash Rai" />
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,7 +32,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="common-section">
       <div class="navbar" id="navMenu">
         <div class="logo">My Portfolio</div>
         <ul class="navbar-list">
@@ -68,7 +67,7 @@
       </div>
     </header>
     <main>
-      <section class="firstSection">
+      <section class="common-section firstSection">
         <div class="container common-section_container">
           <div class="leftSection">
             <div class="hero-heading">
@@ -94,7 +93,7 @@
 
       <!-- about section -->
 
-      <section class="aboutSection">
+      <section class="aboutSection common-section">
         <div class="container common-section_container">
           <h2 class="about-heading">About Me</h2>
 
@@ -122,7 +121,7 @@
 
       <!-- work experiences section  -->
 
-      <section class="workSection">
+      <section class="workSection common-section">
         <div class="container common-section_container">
           <span class="text-gray">What i have done so far</span>
           <h2>Work Experience</h2>
@@ -161,114 +160,119 @@
         </div>
       </section>
 
-      <!-- contact form section  -->
+      <!-- contact section  -->
 
-      <div class="section-contact--form">
-        <div class="heading-container">
-          <h3 class="contact-subheading">Let’s work Together</h3>
-          <p class="contact-desc">
-            Have a project in mind or looking to collaborate? I'm always open to
-            discussing web development opportunities, freelance work, or
-            creative ideas.
-          </p>
-        </div>
-        <div class="container-form">
-          <div class="contact-content">
-            <!-- action with formspree.com for submit data in email -->
-            <form
-              action="https://formspree.io/f/xanwkakp"
-              method="POST"
-              id="form"
-            >
-              <div class="mb-3">
-                <label for="username">Your Name :</label>
-                <input
-                  type="text"
-                  name="fullname"
-                  id="fullname"
-                  required
-                  autocomplete="off"
-                  placeholder="Enter Your Name"
-                  oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email">Email :</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  autocomplete="off"
-                  placeholder="example@gmail.com"
-                />
-              </div>
+      <section class="cForm common-section">
+        <div class="section-contact--form common-section_container">
+          <div class="heading-container">
+            <h3 class="contact-subheading">Let’s work Together</h3>
+            <p class="contact-desc">
+              Have a project in mind or looking to collaborate? I'm always open
+              to discussing web development opportunities, freelance work, or
+              creative ideas.
+            </p>
+          </div>
+          <div class="container-form">
+            <div class="contact-content">
+              <!-- action with formspree.com for submit data in email -->
+              <form
+                action="https://formspree.io/f/xanwkakp"
+                method="POST"
+                id="form"
+              >
+                <div class="mb-3">
+                  <label for="username">Your Name :</label>
+                  <input
+                    type="text"
+                    name="fullname"
+                    id="username"
+                    required
+                    autocomplete="off"
+                    placeholder="Enter Your Name"
+                    oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email">Email :</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    autocomplete="off"
+                    placeholder="example@gmail.com"
+                  />
+                </div>
 
-              <div class="mb-3">
-                <label for="phNumber">Phone No. :</label>
-                <input
-                  type="text"
-                  name="phone"
-                  id="phone"
-                  required
-                  placeholder="Phone Number"
-                  maxlength="15"
-                  oninput="this.value = this.value.replace(/[^0-9]/g, '')"
-                />
-              </div>
+                <div class="mb-3">
+                  <label for="phone">Phone No. :</label>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    required
+                    placeholder="Phone Number"
+                    maxlength="15"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                  />
+                </div>
 
-              <div class="mb-3">
-                <label for="service" class="dropDown">Choose a service :</label>
-                <select
-                  id="service"
-                  name="service"
-                  class="custom-select"
-                  requiredgiy
-                >
-                  <option value="">-- Select --</option>
-                  <option value="responsiveDesignFigma">
-                    Responsive Web Design (Figma)
-                  </option>
-                  <option value="staticWebsite">
-                    Website Development (Static)
-                  </option>
-                  <option value="landingPageDesign">
-                    Landing Page Design & Development
-                  </option>
-                  <option value="performanceOptimization">
-                    Performance Optimization
-                  </option>
-                  <option value="webRedesign">Website Redesign</option>
-                  <option value="webManintenance">Website Maintenance</option>
-                </select>
-              </div>
+                <div class="mb-3">
+                  <label for="service" class="dropDown"
+                    >Choose a service :</label
+                  >
+                  <select
+                    id="service"
+                    name="service"
+                    class="custom-select"
+                    requiredgiy
+                  >
+                    <option value="">-- Select --</option>
+                    <option value="responsiveDesignFigma">
+                      Responsive Web Design (Figma)
+                    </option>
+                    <option value="staticWebsite">
+                      Website Development (Static)
+                    </option>
+                    <option value="landingPageDesign">
+                      Landing Page Design & Development
+                    </option>
+                    <option value="performanceOptimization">
+                      Performance Optimization
+                    </option>
+                    <option value="webRedesign">Website Redesign</option>
+                    <option value="webManintenance">Website Maintenance</option>
+                  </select>
+                </div>
 
-              <div class="mb-3">
-                <label for="message">Message :</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                  placeholder="your messages"
-                ></textarea>
-              </div>
-              <div>
-                <button type="submit" class="contact-btn">send message</button>
-              </div>
-            </form>
+                <div class="mb-3">
+                  <label for="message">Message :</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="your messages"
+                  ></textarea>
+                </div>
+                <div>
+                  <button type="submit" class="contact-btn">
+                    send message
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- feedback -->
 
-      <section class="testimonial-section">
-        <div class="container common-section_container">
+      <section class="testimonial-section common-section">
+        <div class="f-container common-section_container">
           <h3 class="section-title">What Clients Say</h3>
           <p class="section-description">
             Here are some kind words from the people I’ve worked with.
           </p>
-
           <div class="testimonial-grid grid-container">
             <div class="testimonial-card">
               <p class="testimonial-text">
@@ -277,7 +281,7 @@
               </p>
               <div class="client-info">
                 <h4>John Doe</h4>
-                <span>Marketing Manager</span>
+                <span>Individual</span>
               </div>
             </div>
 
@@ -288,25 +292,27 @@
               </p>
               <div class="client-info">
                 <h4>Ali Khan</h4>
-                <span>Freelance Photographer</span>
+                <span>Freelancer</span>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- feedback link  -->
-      <div class="feedback">
-        <h2 class="feedback-heading">
-          <a href="feedback.html" class="feedback-link" target="_blank">
-            <i class="fa-solid fa-pen-to-square"></i> Give Us Feedback</a
-          >
-        </h2>
-      </div>
+      <section class="feedback common-section">
+        <div class="linkContainer common-section_container">
+          <h2 class="feedback-heading">
+            <a href="feedback.html" class="feedback-link" target="_blank">
+              <i class="fa-solid fa-pen-to-square"></i> Give Us Feedback</a
+            >
+          </h2>
+        </div>
+      </section>
     </main>
 
     <!-- footer section  -->
 
-    <footer>
+    <footer class="common-section"">
       <div class="footer-container common-section_container">
         <div class="footer-flex-container">
           <div class="footer-container">

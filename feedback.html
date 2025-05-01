@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Feedback</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- feedback section  -->
 
-    <div class="feedback-section">
+    <section id="common-section" class="feedback-section">
       <div class="box">
         <h2>Leave Your Feedback</h2>
         <p>We'd love to hear your thoughts!</p>
@@ -26,7 +26,7 @@
               <input
                 type="text"
                 name="fullname"
-                id="fullname"
+                id="username"
                 required
                 autocomplete="off"
                 placeholder="Enter Your Name"
@@ -51,9 +51,10 @@
             >
             <input
               type="text"
-              id="position"
+              id="company"
               name="position"
               placeholder="Enter your company / Organization name"
+              class="company-input"
             />
           </div>
           <div class="mb-3">
@@ -84,7 +85,7 @@
             <textarea
               name="message"
               id="message"
-              cols="30"
+              cols="20"
               rows="10"
               required
               placeholder="Write your feedback..."
@@ -96,7 +97,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
