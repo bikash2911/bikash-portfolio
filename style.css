@@ -689,6 +689,21 @@ footer .footer-flex-container .footer-container {
 
 /* responsive ko lagi  */
 
+@media (min-width: 1920px) {
+  html {
+    font-size: 70%; /* 1rem = 11.2px */
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .common-section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+
 @media (min-width: 1367px) {
   html {
     font-size: 65%; /* 1rem = 10.4px */
@@ -702,6 +717,7 @@ footer .footer-flex-container .footer-container {
     justify-content: center;
   }
 }
+
 
 @media screen and (max-width: 1057px) {
   html {
