@@ -430,7 +430,11 @@ textarea:focus-visible {
   flex-direction: column;
 }
 .project-container {
-  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  padding-top: 1rem;
+  margin-top: 5rem;
 }
 
 .project-card {
@@ -448,6 +452,7 @@ textarea:focus-visible {
 .project-card p {
   font-size: 1.6rem;
   color: #555;
+  padding: 0.5rem;
 }
 
 .project-card .btn {
@@ -466,8 +471,7 @@ textarea:focus-visible {
 }
 
 .project {
-  height: 70vh;
-  margin-top: 8rem;
+  height: 100vh;
 }
 
 a:link,
@@ -695,14 +699,12 @@ footer .footer-flex-container .footer-container {
   }
 }
 
-
 @media (min-width: 1440px) {
   .common-section {
     max-width: 1200px;
     margin: 0 auto;
   }
 }
-
 
 @media (min-width: 1367px) {
   html {
@@ -717,7 +719,6 @@ footer .footer-flex-container .footer-container {
     justify-content: center;
   }
 }
-
 
 @media screen and (max-width: 1057px) {
   html {
@@ -892,6 +893,17 @@ footer .footer-flex-container .footer-container {
   }
   .company-input {
     width: 100%;
+  }
+
+  /* project  */
+  .project {
+    margin-top: 4rem;
+    padding-top: 5rem;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   /* Footer */
