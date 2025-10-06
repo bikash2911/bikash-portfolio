@@ -171,109 +171,105 @@
 
       <!-- contact section  -->
 
-      <section class="cForm common-section">
-        <div class="section-contact--form common-section_container">
-          <div class="heading-container">
-            <h3 class="contact-subheading">Let’s work Together</h3>
-            <p class="contact-desc">
-              Have a project in mind or looking to collaborate? I'm always open
-              to discussing web development opportunities, freelance work, or
-              creative ideas.
-            </p>
-          </div>
-          <div class="container-form">
-            <div class="contact-content">
-              <!-- action with formspree.com for submit data in email -->
-              <form
-                action="https://formspree.io/f/xanwkakp"
-                method="POST"
-                id="form"
-              >
-                <div class="mb-3">
-                  <label for="username">Your Name :</label>
-                  <input
-                    type="text"
-                    name="fullname"
-                    id="username"
-                    required
-                    autocomplete="off"
-                    placeholder="Enter Your Name"
-                    oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="email">Email :</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    required
-                    autocomplete="off"
-                    placeholder="example@gmail.com"
-                  />
-                </div>
+      <section class="cForm form-blank common-section">
+      <div class="section-contact--form common-section_container">
+        <div class="heading-container">
+          <h3 class="contact-subheading">Let’s work Together</h3>
+          <p class="contact-desc">
+            Have a project in mind or looking to collaborate? I'm always open to
+            discussing web development opportunities, freelance work, or
+            creative ideas.
+          </p>
+        </div>
+        <div class="container-form">
+          <div class="contact-content">
+            <!-- action with formspree.com for submit data in email -->
+            <form
+              action="https://formspree.io/f/xanwkakp"
+              method="POST"
+              id="form"
+            >
+              <div class="mb-3">
+                <label for="username">Your Name :</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  id="username"
+                  required
+                  autocomplete="off"
+                  placeholder="Enter Your Name"
+                  oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email">Email :</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  autocomplete="off"
+                  placeholder="example@gmail.com"
+                />
+              </div>
 
-                <div class="mb-3">
-                  <label for="phone">Phone No. :</label>
-                  <input
-                    type="text"
-                    name="phone"
-                    id="phone"
-                    required
-                    placeholder="Phone Number"
-                    maxlength="15"
-                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
-                  />
-                </div>
+              <div class="mb-3">
+                <label for="phone">Phone No. :</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  required
+                  placeholder="Phone Number"
+                  maxlength="15"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                />
+              </div>
 
-                <div class="mb-3">
-                  <label for="service" class="dropDown"
-                    >Choose a service :</label
-                  >
-                  <select
-                    id="service"
-                    name="service"
-                    class="custom-select"
-                    requiredgiy
-                  >
-                    <option value="">-- Select --</option>
-                    <option value="responsiveDesignFigma">
-                      Responsive Web Design (Figma)
-                    </option>
-                    <option value="staticWebsite">
-                      Website Development (Static)
-                    </option>
-                    <option value="landingPageDesign">
-                      Landing Page Design & Development
-                    </option>
-                    <option value="performanceOptimization">
-                      Performance Optimization
-                    </option>
-                    <option value="webRedesign">Website Redesign</option>
-                    <option value="webManintenance">Website Maintenance</option>
-                  </select>
-                </div>
+              <div class="mb-3">
+                <label for="service" class="dropDown">Choose a service :</label>
+                <select
+                  id="service"
+                  name="service"
+                  class="custom-select"
+                  requiredgiy
+                >
+                  <option value="">-- Select --</option>
+                  <!-- <option value="responsiveDesignFigma">
+                    Responsive Web Design (Figma)
+                  </option> -->
+                  <option value="staticWebsite">
+                    Website Development (Static)
+                  </option>
+                  <option value="landingPageDesign">
+                    Landing Page Design (with Free Hosting)
+                  </option>
+                  <option value="portfolioDesign">
+                    Portfolio Website Design
+                  </option>
+                  <option value="businessSite">Business Website Design</option>
+                  <option value="multiSectionBlockPage">Multi-Section Website / Block Pages Design</option>
+                </select>
+              </div>
 
-                <div class="mb-3">
-                  <label for="message">Message :</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="10"
-                    placeholder="your messages"
-                  ></textarea>
-                </div>
-                <div>
-                  <button type="submit" class="contact-btn">
-                    send message
-                  </button>
-                </div>
-              </form>
-            </div>
+              <div class="mb-3">
+                <label for="message">Message :</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="your messages"
+                ></textarea>
+              </div>
+              <div>
+                <button type="submit" class="contact-btn">send message</button>
+              </div>
+            </form>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
       <!-- feedback -->
 
       <section class="testimonial-section common-section">
