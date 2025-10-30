@@ -427,6 +427,9 @@ textarea:focus-visible {
 }
 
 /* project  */
+.project-heading {
+  text-align: center;
+}
 .project-section {
   flex-direction: column;
 }
